@@ -1,0 +1,10 @@
+Backends
+Dependencies
+ENet
+Implementations
+x64
+x86
+
+SimpleNetLibCore/bin
+SimpleNetLibCore/.vs
+SimpleNetLibCore/obj

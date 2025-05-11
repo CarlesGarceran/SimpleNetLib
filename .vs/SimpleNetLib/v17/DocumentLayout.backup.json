@@ -1,0 +1,207 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Carles\\source\\repos\\SimpleNetLib\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3475854E-B565-44BD-A532-B2521302567F}|SimpleNetLibCore\\SimpleNetLibCore.csproj|c:\\users\\carles\\source\\repos\\simplenetlib\\simplenetlibcore\\genericapi\\flags\\packetflags.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3475854E-B565-44BD-A532-B2521302567F}|SimpleNetLibCore\\SimpleNetLibCore.csproj|solutionrelative:simplenetlibcore\\genericapi\\flags\\packetflags.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7AD06E53-9A1D-486E-8E77-97B02D44C7A5}|Backends\\SimpleNetLite-ENet\\SimpleNetLib-ENet.csproj|c:\\users\\carles\\source\\repos\\simplenetlib\\backends\\simplenetlite-enet\\packets\\playeradded.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7AD06E53-9A1D-486E-8E77-97B02D44C7A5}|Backends\\SimpleNetLite-ENet\\SimpleNetLib-ENet.csproj|solutionrelative:backends\\simplenetlite-enet\\packets\\playeradded.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7AD06E53-9A1D-486E-8E77-97B02D44C7A5}|Backends\\SimpleNetLite-ENet\\SimpleNetLib-ENet.csproj|c:\\users\\carles\\source\\repos\\simplenetlib\\backends\\simplenetlite-enet\\client\\networkclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7AD06E53-9A1D-486E-8E77-97B02D44C7A5}|Backends\\SimpleNetLite-ENet\\SimpleNetLib-ENet.csproj|solutionrelative:backends\\simplenetlite-enet\\client\\networkclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7AD06E53-9A1D-486E-8E77-97B02D44C7A5}|Backends\\SimpleNetLite-ENet\\SimpleNetLib-ENet.csproj|c:\\users\\carles\\source\\repos\\simplenetlib\\backends\\simplenetlite-enet\\abstract\\anetworkhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7AD06E53-9A1D-486E-8E77-97B02D44C7A5}|Backends\\SimpleNetLite-ENet\\SimpleNetLib-ENet.csproj|solutionrelative:backends\\simplenetlite-enet\\abstract\\anetworkhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55F3060D-FECB-4A57-BF34-E6D2C1E31BDC}|Implementations\\SimpleNetLibGoldEngine\\SimpleNetLibGoldEngine.csproj|c:\\users\\carles\\source\\repos\\simplenetlib\\implementations\\simplenetlibgoldengine\\networkhelloworldtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55F3060D-FECB-4A57-BF34-E6D2C1E31BDC}|Implementations\\SimpleNetLibGoldEngine\\SimpleNetLibGoldEngine.csproj|solutionrelative:implementations\\simplenetlibgoldengine\\networkhelloworldtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55F3060D-FECB-4A57-BF34-E6D2C1E31BDC}|Implementations\\SimpleNetLibGoldEngine\\SimpleNetLibGoldEngine.csproj|c:\\users\\carles\\source\\repos\\simplenetlib\\implementations\\simplenetlibgoldengine\\networkscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55F3060D-FECB-4A57-BF34-E6D2C1E31BDC}|Implementations\\SimpleNetLibGoldEngine\\SimpleNetLibGoldEngine.csproj|solutionrelative:implementations\\simplenetlibgoldengine\\networkscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55F3060D-FECB-4A57-BF34-E6D2C1E31BDC}|Implementations\\SimpleNetLibGoldEngine\\SimpleNetLibGoldEngine.csproj|c:\\users\\carles\\source\\repos\\simplenetlib\\implementations\\simplenetlibgoldengine\\networkpositionsyncer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55F3060D-FECB-4A57-BF34-E6D2C1E31BDC}|Implementations\\SimpleNetLibGoldEngine\\SimpleNetLibGoldEngine.csproj|solutionrelative:implementations\\simplenetlibgoldengine\\networkpositionsyncer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7AD06E53-9A1D-486E-8E77-97B02D44C7A5}|Backends\\SimpleNetLite-ENet\\SimpleNetLib-ENet.csproj|c:\\users\\carles\\source\\repos\\simplenetlib\\backends\\simplenetlite-enet\\server\\networkserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7AD06E53-9A1D-486E-8E77-97B02D44C7A5}|Backends\\SimpleNetLite-ENet\\SimpleNetLib-ENet.csproj|solutionrelative:backends\\simplenetlite-enet\\server\\networkserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3475854E-B565-44BD-A532-B2521302567F}|SimpleNetLibCore\\SimpleNetLibCore.csproj|c:\\users\\carles\\source\\repos\\simplenetlib\\simplenetlibcore\\abstractions\\anetworkhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3475854E-B565-44BD-A532-B2521302567F}|SimpleNetLibCore\\SimpleNetLibCore.csproj|solutionrelative:simplenetlibcore\\abstractions\\anetworkhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 70,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PacketFlags.cs",
+              "DocumentMoniker": "C:\\Users\\Carles\\source\\repos\\SimpleNetLib\\SimpleNetLibCore\\GenericAPI\\Flags\\PacketFlags.cs",
+              "RelativeDocumentMoniker": "SimpleNetLibCore\\GenericAPI\\Flags\\PacketFlags.cs",
+              "ToolTip": "C:\\Users\\Carles\\source\\repos\\SimpleNetLib\\SimpleNetLibCore\\GenericAPI\\Flags\\PacketFlags.cs",
+              "RelativeToolTip": "SimpleNetLibCore\\GenericAPI\\Flags\\PacketFlags.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T21:11:33.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlayerAdded.cs",
+              "DocumentMoniker": "C:\\Users\\Carles\\source\\repos\\SimpleNetLib\\Backends\\SimpleNetLite-ENet\\Packets\\PlayerAdded.cs",
+              "RelativeDocumentMoniker": "Backends\\SimpleNetLite-ENet\\Packets\\PlayerAdded.cs",
+              "ToolTip": "C:\\Users\\Carles\\source\\repos\\SimpleNetLib\\Backends\\SimpleNetLite-ENet\\Packets\\PlayerAdded.cs",
+              "RelativeToolTip": "Backends\\SimpleNetLite-ENet\\Packets\\PlayerAdded.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T21:11:25.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NetworkClient.cs",
+              "DocumentMoniker": "C:\\Users\\Carles\\source\\repos\\SimpleNetLib\\Backends\\SimpleNetLite-ENet\\Client\\NetworkClient.cs",
+              "RelativeDocumentMoniker": "Backends\\SimpleNetLite-ENet\\Client\\NetworkClient.cs",
+              "ToolTip": "C:\\Users\\Carles\\source\\repos\\SimpleNetLib\\Backends\\SimpleNetLite-ENet\\Client\\NetworkClient.cs",
+              "RelativeToolTip": "Backends\\SimpleNetLite-ENet\\Client\\NetworkClient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T21:32:55.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ANetworkHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Carles\\source\\repos\\SimpleNetLib\\Backends\\SimpleNetLite-ENet\\Abstract\\ANetworkHandler.cs",
+              "RelativeDocumentMoniker": "Backends\\SimpleNetLite-ENet\\Abstract\\ANetworkHandler.cs",
+              "ToolTip": "C:\\Users\\Carles\\source\\repos\\SimpleNetLib\\Backends\\SimpleNetLite-ENet\\Abstract\\ANetworkHandler.cs",
+              "RelativeToolTip": "Backends\\SimpleNetLite-ENet\\Abstract\\ANetworkHandler.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAcwFoAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T21:32:32.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ANetworkHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Carles\\source\\repos\\SimpleNetLib\\SimpleNetLibCore\\Abstractions\\ANetworkHandler.cs",
+              "RelativeDocumentMoniker": "SimpleNetLibCore\\Abstractions\\ANetworkHandler.cs",
+              "ToolTip": "C:\\Users\\Carles\\source\\repos\\SimpleNetLib\\SimpleNetLibCore\\Abstractions\\ANetworkHandler.cs",
+              "RelativeToolTip": "SimpleNetLibCore\\Abstractions\\ANetworkHandler.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAADgv1UAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T21:31:20.967Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NetworkPositionSyncer.cs",
+              "DocumentMoniker": "C:\\Users\\Carles\\source\\repos\\SimpleNetLib\\Implementations\\SimpleNetLibGoldEngine\\NetworkPositionSyncer.cs",
+              "RelativeDocumentMoniker": "Implementations\\SimpleNetLibGoldEngine\\NetworkPositionSyncer.cs",
+              "ToolTip": "C:\\Users\\Carles\\source\\repos\\SimpleNetLib\\Implementations\\SimpleNetLibGoldEngine\\NetworkPositionSyncer.cs",
+              "RelativeToolTip": "Implementations\\SimpleNetLibGoldEngine\\NetworkPositionSyncer.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAADgv08AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T21:29:33.861Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NetworkScript.cs",
+              "DocumentMoniker": "C:\\Users\\Carles\\source\\repos\\SimpleNetLib\\Implementations\\SimpleNetLibGoldEngine\\NetworkScript.cs",
+              "RelativeDocumentMoniker": "Implementations\\SimpleNetLibGoldEngine\\NetworkScript.cs",
+              "ToolTip": "C:\\Users\\Carles\\source\\repos\\SimpleNetLib\\Implementations\\SimpleNetLibGoldEngine\\NetworkScript.cs",
+              "RelativeToolTip": "Implementations\\SimpleNetLibGoldEngine\\NetworkScript.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAADgv0MAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T21:29:33.88Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NetworkHelloWorldTest.cs",
+              "DocumentMoniker": "C:\\Users\\Carles\\source\\repos\\SimpleNetLib\\Implementations\\SimpleNetLibGoldEngine\\NetworkHelloWorldTest.cs",
+              "RelativeDocumentMoniker": "Implementations\\SimpleNetLibGoldEngine\\NetworkHelloWorldTest.cs",
+              "ToolTip": "C:\\Users\\Carles\\source\\repos\\SimpleNetLib\\Implementations\\SimpleNetLibGoldEngine\\NetworkHelloWorldTest.cs",
+              "RelativeToolTip": "Implementations\\SimpleNetLibGoldEngine\\NetworkHelloWorldTest.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAD4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T21:26:41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "NetworkServer.cs",
+              "DocumentMoniker": "C:\\Users\\Carles\\source\\repos\\SimpleNetLib\\Backends\\SimpleNetLite-ENet\\Server\\NetworkServer.cs",
+              "RelativeDocumentMoniker": "Backends\\SimpleNetLite-ENet\\Server\\NetworkServer.cs",
+              "ToolTip": "C:\\Users\\Carles\\source\\repos\\SimpleNetLib\\Backends\\SimpleNetLite-ENet\\Server\\NetworkServer.cs",
+              "RelativeToolTip": "Backends\\SimpleNetLite-ENet\\Server\\NetworkServer.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAlwBMAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T14:10:29.692Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 212,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
