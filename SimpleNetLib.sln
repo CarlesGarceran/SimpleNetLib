@@ -19,7 +19,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ENet", "ENet", "{278FA900-E
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Native", "Native", "{251F4A0A-EB71-41A8-9CB3-599CBC0E8CFA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleNetLib-ENet", "Backends\SimpleNetLite-ENet\SimpleNetLib-ENet.csproj", "{7AD06E53-9A1D-486E-8E77-97B02D44C7A5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleNetLib-ENet", "Backends\SimpleNetLib-ENet\SimpleNetLib-ENet.csproj", "{7AD06E53-9A1D-486E-8E77-97B02D44C7A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

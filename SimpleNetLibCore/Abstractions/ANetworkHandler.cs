@@ -1,18 +1,14 @@
 ﻿using SimpleNetLibCore.Exceptions;
 using SimpleNetLibCore.Packet;
 using SimpleNetLibCore.Packet.Generic;
-using SimpleNetLibCore.Packet.LowLevel;
 using SimpleNetLibCore.Store;
 using SimpleNetLibCore.Store.Attributes;
 using SimpleNetLibCore.Utils;
-using SimpleNetLibCore.Abstractions;
 using SimpleNetLibCore.Authority;
 using SimpleNetLibCore.Interfaces;
-using SimpleNetLibCore.Store;
 using System;
 using System.Collections.Generic;
 using System.Reflection;
-using SimpleNetLibCore.GenericAPI.Flags;
 
 namespace SimpleNetLibCore.Abstractions
 {
@@ -20,9 +16,10 @@ namespace SimpleNetLibCore.Abstractions
     {
         public bool IsServer { get; protected set; }
         public bool IsClient { get; protected set; }
+
         public byte CurrentChannel { get; protected set; } = 0;
 
-        public int Timeout = 15;
+        public int Timeout = 1;
 
         public static ANetworkHandler? Instance { get; protected set; }
 
@@ -43,11 +40,15 @@ namespace SimpleNetLibCore.Abstractions
             networkAuthorities.Add(request);
         }
 
-        public virtual void SendToUser(NetworkPacket packet, User user, PacketFlags packetFlags = PacketFlags.None, byte channelId = 0) { }
-        public virtual void SendToUser(NetworkPacket packet, Object peer, PacketFlags packetFlags = PacketFlags.None, byte channelId = 0) { }
-        public virtual void SendToServer(NetworkPacket packet, PacketFlags packetFlags, byte channelID = 0) { }
+        public virtual void SendToUser(NetworkPacket packet, User user, int packetFlags = 0, byte channelId = 0) { }
+        public virtual void SendToUser(NetworkPacket packet, Object peer, int packetFlags = 0, byte channelId = 0) { }
+        public virtual void SendToServer(NetworkPacket packet, int packetFlags = 0, byte channelID = 0) { }
 
-        public void Broadcast(NetworkPacket packet, PacketFlags packetFlags = PacketFlags.None, byte channelId = 0)
+        public virtual void SendToUser(NetworkPacket packet, User user, string packetFlags, byte channelId = 0) { }
+        public virtual void SendToUser(NetworkPacket packet, Object peer, string packetFlags, byte channelId = 0) { }
+        public virtual void SendToServer(NetworkPacket packet, string packetFlags, byte channelID = 0) { }
+
+        public void Broadcast(NetworkPacket packet, int packetFlags = 0, byte channelId = 0)
         {
             /*
             SimpleNetLibCore.Wrapper.Packet p = new SimpleNetLibCore.Wrapper.Packet();
@@ -60,7 +61,7 @@ namespace SimpleNetLibCore.Abstractions
             ManualBroadcast(packet, channelId, packetFlags);
         }
 
-        public void ServerRPC(INetworkObject networkObject, Delegate functionName, byte channelId, PacketFlags packetFlags, params object[] args)
+        public void ServerRPC(INetworkObject networkObject, Delegate functionName, byte channelId, int packetFlags, params object[] args)
         {
             if (functionName == null)
                 return;
@@ -83,7 +84,7 @@ namespace SimpleNetLibCore.Abstractions
             }
         }
 
-        public void ClientRPC(INetworkObject networkObject, Delegate functionName, byte channelId, PacketFlags flags, params object[] args)
+        public void ClientRPC(INetworkObject networkObject, Delegate functionName, byte channelId, int packetFlags, params object[] args)
         {
             if (functionName == null)
                 return;
@@ -98,7 +99,7 @@ namespace SimpleNetLibCore.Abstractions
             {
                 string funcName = funcAttrib.functionName;
 
-                ClientRPC(networkObject, funcName, channelId, flags, args);
+                ClientRPC(networkObject, funcName, channelId, packetFlags, args);
             }
             else
             {
@@ -107,7 +108,7 @@ namespace SimpleNetLibCore.Abstractions
             }
         }
 
-        public void TargetRPC(INetworkObject networkObject, User target, Delegate functionName, byte channelId, PacketFlags packetFlags, params object[] args)
+        public void TargetRPC(INetworkObject networkObject, User target, Delegate functionName, byte channelId, int packetFlags, params object[] args)
         {
             if (functionName == null)
                 return;
@@ -131,7 +132,7 @@ namespace SimpleNetLibCore.Abstractions
             }
         }
 
-        public void ServerRPC(INetworkObject networkObject, string functionName, byte channelId, PacketFlags flags, params object[] args)
+        public void ServerRPC(INetworkObject networkObject, string functionName, byte channelId, int flags, params object[] args)
         {
             INetworkObject? owner = NetworkStore.Instance.GetObjectInstance(networkObject.ObjectID);
 
@@ -153,7 +154,7 @@ namespace SimpleNetLibCore.Abstractions
             this.SendToServer(packet, flags, channelId);
         }
 
-        public void ClientRPC(INetworkObject networkObject, string functionName, byte channelId, PacketFlags flags, params object[] args)
+        public void ClientRPC(INetworkObject networkObject, string functionName, byte channelId, int flags, params object[] args)
         {
             INetworkObject? owner = NetworkStore.Instance.GetObjectInstance(networkObject.ObjectID);
 
@@ -175,7 +176,7 @@ namespace SimpleNetLibCore.Abstractions
             this.Broadcast(packet, flags, channelId);
         }
 
-        public void TargetRPC(INetworkObject networkObject, User target, string functionName, byte channelId, PacketFlags flags, params object[] args)
+        public void TargetRPC(INetworkObject networkObject, User target, string functionName, byte channelId, int flags, params object[] args)
         {
             INetworkObject? owner = NetworkStore.Instance.GetObjectInstance(networkObject.ObjectID);
 
@@ -219,7 +220,7 @@ namespace SimpleNetLibCore.Abstractions
         protected virtual void ProcessDisconnectionPacket(Object @e) => throw new NonImplementedMethodException();
         protected virtual void ProcessTimeoutPacket(Object @e) => throw new NonImplementedMethodException();
 
-        protected abstract void ManualBroadcast(NetworkPacket packet, byte channelId, PacketFlags packetFlags);
+        protected abstract void ManualBroadcast(NetworkPacket packet, byte channelId, int packetFlags);
         protected abstract void Broadcast(byte channelId, Object packet);
 
         private void ProcessPacket(NetworkPacket p, Object @event)

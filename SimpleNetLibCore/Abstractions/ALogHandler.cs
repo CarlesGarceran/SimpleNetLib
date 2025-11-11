@@ -8,7 +8,6 @@ namespace SimpleNetLibCore.Abstractions
 {
     /// <summary>
     /// Abstract network handler for piping into GameEngines.
-    /// 
     /// </summary>
     public abstract class ALogHandler
     {

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -10,21 +11,22 @@ namespace SimpleNetLibCore.Utils
 {
     public class User
     {
-        public string uid;
-        public string name;
-        public int ping;
+        public string uid { get; private set; } = "UNDEFINED";
+        public string name { get; private set; }
+        public int ping { get; private set; }
 
-        public Object enetPeer;
+        [JsonIgnore] public object socket { get; private set; }
 
-        public User(string name, Object peer)
+        public User(string name)
         {
+            Instance = this;
             this.name = name;
-            this.enetPeer = peer;
         }
 
-        public User()
-        {
-            
-        }
+        public void SetSocket(object socket) => this.socket = socket;
+        public void SetPing(int ping) => this.ping = ping;
+        public void SetUID(string uid) => this.uid = uid;
+
+        public static User? Instance;
     }
 }

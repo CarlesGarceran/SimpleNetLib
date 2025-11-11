@@ -1,4 +1,5 @@
-﻿using SimpleNetLibCore.Utils;
+﻿using SimpleNetLibCore.Reflection;
+using SimpleNetLibCore.Utils;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -14,12 +15,14 @@ namespace SimpleNetLibCore.Packet.Generic
     {
         private MemoryStream memoryStream;
         public Buffer<byte> memoryBuffer;
+        public ReflectableObject packetOwner;
 
-        public NetworkPacket()
+        public NetworkPacket(User owner)
         {
             memoryBuffer = new Buffer<byte>();
             memoryStream = new MemoryStream(memoryBuffer.data);
-            
+            packetOwner = new ReflectableObject();
+            packetOwner.Serialize(owner);
         }
 
         public string Serialize()
@@ -38,6 +41,5 @@ namespace SimpleNetLibCore.Packet.Generic
         {
             return Serialize();
         }
-
     }
 }

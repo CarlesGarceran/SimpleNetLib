@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SimpleNetLibCore.Utils;
 
 namespace SimpleNetLibCore.Packet
 {
@@ -16,8 +17,9 @@ namespace SimpleNetLibCore.Packet
         public string objectUid = "";
         
         public GUIDSync(string objectUid)
+            : base(User.Instance)
         {
-
+            this.tempUid = objectUid;
         }
 
         public override void ClientExecute(Object e)

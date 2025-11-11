@@ -29,7 +29,7 @@ namespace SimpleNetLibCore.Packet.LowLevel
 
         public byte[] Serialize()
         {
-            byte[] jsonBytes = Encoding.UTF8.GetBytes(Newtonsoft.Json.JsonConvert.SerializeObject(this));
+            byte[] jsonBytes = Library.Settings.PacketEncrypter.EncryptBuffer(Encoding.UTF8.GetBytes(Newtonsoft.Json.JsonConvert.SerializeObject(this)));
             return Compressor.Compress(jsonBytes);
         }
 

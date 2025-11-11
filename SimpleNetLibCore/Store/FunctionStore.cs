@@ -38,6 +38,12 @@ namespace SimpleNetLibCore.Store
             packetReceivedAttributes = new Dictionary<Type, MethodInstance>();
         }
 
+        public void AddGenericFunction(string functionName, MethodInstance methodInst)
+        {
+            serverMethods.Add(functionName, methodInst);
+            clientMethods.Add(functionName, methodInst);
+        }
+
         public void AddServerFunction(string functionName, MethodInstance methodInst)
         {
             if (methodInst.info.GetCustomAttribute<ClientFunctionAttribute>() != null)

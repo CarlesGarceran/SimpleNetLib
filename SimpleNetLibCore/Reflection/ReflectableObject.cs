@@ -20,8 +20,8 @@ namespace SimpleNetLibCore.Reflection
     {
         public Reflected serialized;
 
-        public Type objectType;
-        private object instance;
+        public Type? objectType;
+        private object? instance;
 
         public ReflectableObject()
         {
@@ -34,19 +34,28 @@ namespace SimpleNetLibCore.Reflection
         {
             instance = inst;
             objectType = inst.GetType();
-            serialized.instance = JSON.SerializeObject(instance);
+            serialized.instance = Library.Settings.PacketEncrypter.EncryptString(JSON.SerializeObject(instance));
             serialized.typeRef = objectType.FullName;
         }
 
         public void Deserialize()
         {
-            //objectType = Type.GetType(serialized.typeRef);
-            instance = JSON.DeserializeObject(serialized.instance, objectType);
+            instance = JSON.DeserializeObject(Library.Settings.PacketEncrypter.DecryptString(serialized.instance), objectType);
+        }
+
+        public void DeserializeAs<T>()
+        {
+            instance = JSON.DeserializeObject(Library.Settings.PacketEncrypter.DecryptString(serialized.instance), typeof(T));
         }
 
         public object? Get()
         {
             return instance;
+        }
+
+        public T GetAs<T>()
+        {
+            return (T)instance;
         }
     }
 }
