@@ -52,7 +52,7 @@ namespace SimpleNetLibCore.Packet
                 deserializedArgs[x] = args[x].Get();
             }
 
-            methodInfo.Invoke(instance, deserializedArgs);
+            methodInfo.Invoke(instance, new object[] { deserializedArgs });
         }
 
         public override void Execute(Object ev)
@@ -74,7 +74,7 @@ namespace SimpleNetLibCore.Packet
                 deserializedArgs[x+1] = args[x].Get();
             }
 
-            methodInfo.Invoke(instance, deserializedArgs);
+            methodInfo.Invoke(instance, new object[] { deserializedArgs });
         }
     }
 }
